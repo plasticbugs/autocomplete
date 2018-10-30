@@ -15,7 +15,7 @@ To observe changes to the application store while this application is running, i
 https://github.com/zalmoxisus/redux-devtools-extension
 
 ## Problem description:
-Build a React application that captures key presses from a text input and uses to current value to match items from a data store.
+Build a React application that captures key presses from a text input and uses the current value to match items from a data store.
 Matching items should be output underneath the input field.
 The final solution should have two search inputs that search different data sets. One is a set of strings, the other, a set of objects.
 If there are no results, the application should let the user know.
