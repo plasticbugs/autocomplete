@@ -4,7 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Running this application:
 1. Install application dependencies by running: `yarn`
-2. Then, run the development server with: `yarn start`
+2. Run the development server with: `yarn start`
+3. Visit `http://localhost:3000/` to view the application
 
 You can create a production build of this application by running: `yarn build`
 
