@@ -3,9 +3,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Autocomplete Challenge
 
 ## Running this application:
-1. Install application dependencies by running: `yarn`
-2. Run the development server with: `yarn start`
-3. Visit `http://localhost:3000/` to view the application
+1. Clone this repository
+2. Navigate to the project directory
+3. Install application dependencies by running: `yarn`
+4. Run the development server with: `yarn start`
+5. Visit `http://localhost:3000/` to view the application
 
 You can create a production build of this application by running: `yarn build`
 
