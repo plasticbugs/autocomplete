@@ -1,5 +1,6 @@
 .search-form {
   padding: 20px;
+  width: 40%;
 }
 
 .search-result {
@@ -28,6 +29,7 @@
   border: 1px solid #dbdbdb;
   padding: 10px 20px;
   margin-bottom: 4px;
+  width: 100%;
 }
 
 .search-input:focus {
