@@ -9,22 +9,33 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can create a production build of this application by running: `yarn build`
 
+## Problem description:
+Build a React application that captures key presses from a text input and uses to current value to match items from a data store.
+Matching items should be output underneath the input field.
+The final solution should have two search inputs that search different data sets. One is a set of strings, the other, a set of objects.
+If there are no results, the application should let the user know.
+The application must make use of one or more data stores to store both data sets and the autocomplete results.
+
 ## Solution:
-I chose to use Redux to store the application data. The cities and books data initialize on app load. The application adds matching search results to the store as `queries`.
+I chose to use Redux to store the application data. The cities and books data initialize when the search page loads. The application adds matching search results to the store as `queries`.
 
 A SearchPage container provides the data store and dispatched query actions to the SearchPage view which passes the appropriate data and actions to the individual Search components as props.
 
-Inside the Search component, I tried to keep things as DRY as possible while allowing for searching and displaying results from both arrays of strings (cities) and arrays of objects (books).
+Inside the Search component, I tried to keep things DRY while allowing for searching and displaying results from both arrays of strings (cities) and arrays of objects (books).
 
 ## Interface decisions:
 - The application presents a prompt to enter 3 or more characters if the user types fewer than three characters.
-- If the input loses focus, both the error state prompt and the search results disappear. If the the input regains focus, the results/input prompt reappear.
+- If the input loses focus, both the error state prompt and the search results are removed from the view. If the the input regains focus, the autocomplete results/input prompt reappear.
 - If no item matches the search string, the search result shows: `No items found`.
 - The stored queries in the app state are removed when:
-  - no results are found
+  - no results are found from the current search string
   - the input field is empty
   - fewer than three characters have been input 
 
-## Additional technology used:
+## Technical choices
+I decided to nest the query results for both books and cities in a queries object, while keeping the initial data stores separate/flat.
 
+If I were to spend additional time on this project, I would implement a click handler on the results to autofill the input field, which would reduce the query results to the selected item and would then remove the results from the view.
+
+## Additional technology used:
 I added `lodash` to safely get some nested data from the app store and to clone objects from the search results.
