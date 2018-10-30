@@ -1,0 +1,42 @@
+.search-form {
+  padding: 20px;
+}
+
+.search-result {
+  font-size: 1em;
+  padding: 10px;
+  border: 1px solid #bac3cc;
+  border-top: none;
+  background-color: #eff3f7;
+}
+
+.search-result:first-child {
+  border: 1px solid #bac3cc;
+}
+
+.result-header {
+  font-weight: bold;
+}
+
+.result-details {
+  font-size: .8em;
+}
+
+.search-input {
+  border-radius: 8px;
+  font-size: 18px;
+  border: 1px solid #dbdbdb;
+  padding: 10px 20px;
+  margin-bottom: 4px;
+}
+
+.search-input:focus {
+  border: 1px solid #85b7d9;
+  outline: none;
+}
+
+.input-error {
+  font-size: 12px;
+  color: #d84e93;
+  margin-left: 10px;
+}
