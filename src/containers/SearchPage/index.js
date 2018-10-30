@@ -3,12 +3,10 @@ import {connect} from 'react-redux';
 
 import {
   initializeCitiesData,
-  initializeBooksData
-} from '../App/actions';
-import {
+  initializeBooksData,
   bookQuery,
   cityQuery,
-} from '../SearchPage/actions';
+} from './actions';
 import bookData from '../App/data/books';
 import citiesData from '../App/data/cities';
 import SearchPageView from '../../views/SearchPage';
