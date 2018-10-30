@@ -11,6 +11,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can create a production build of this application by running: `yarn build`
 
+To observe changes to the application store while this application is running, install the Redux DevTools extension by following the instructions here:
+https://github.com/zalmoxisus/redux-devtools-extension
+
 ## Problem description:
 Build a React application that captures key presses from a text input and uses to current value to match items from a data store.
 Matching items should be output underneath the input field.
